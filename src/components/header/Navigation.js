@@ -5,16 +5,14 @@ import {
   NavbarToggler,
   NavbarBrand,
   Nav,
-  NavItem,
   NavLink,
   UncontrolledDropdown,
   DropdownToggle,
   DropdownMenu,
   DropdownItem,
-  NavbarText,
 } from "reactstrap";
 
-function Example(args) {
+function Navigation(args) {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggle = () => setIsOpen(!isOpen);
@@ -22,35 +20,55 @@ function Example(args) {
   return (
     <div>
       <Navbar {...args}>
-        <NavbarBrand href="/">reactstrap</NavbarBrand>
-        <NavbarToggler onClick={toggle} />
-        <Collapse isOpen={isOpen} navbar>
-          <Nav className="me-auto" navbar>
-            <NavItem>
-              <NavLink href="/components/">Components</NavLink>
-            </NavItem>
-            <NavItem>
-              <NavLink href="https://github.com/reactstrap/reactstrap">
-                GitHub
-              </NavLink>
-            </NavItem>
-            <UncontrolledDropdown nav inNavbar>
-              <DropdownToggle nav caret>
-                Options
-              </DropdownToggle>
-              <DropdownMenu right>
-                <DropdownItem>Option 1</DropdownItem>
-                <DropdownItem>Option 2</DropdownItem>
-                <DropdownItem divider />
-                <DropdownItem>Reset</DropdownItem>
-              </DropdownMenu>
-            </UncontrolledDropdown>
-          </Nav>
-          <NavbarText>Simple Text</NavbarText>
-        </Collapse>
+        <div>
+          <NavbarBrand href="/">reactstrap</NavbarBrand>
+        </div>
+        <div>
+          <NavbarToggler onClick={toggle} />
+          <Collapse isOpen={isOpen} navbar>
+            <Nav className="me-auto" navbar>
+              <UncontrolledDropdown nav inNavbar>
+                <DropdownToggle nav caret>
+                  All React Hooks
+                </DropdownToggle>
+                <DropdownMenu right>
+                  <DropdownItem>
+                    <NavLink href="/use-state">UseState</NavLink>
+                  </DropdownItem>
+                  <DropdownItem>
+                    <NavLink href="/use-reducer">UseReducer</NavLink>
+                  </DropdownItem>
+                  <DropdownItem>
+                    <NavLink href="/use-effect">UseEffect</NavLink>
+                  </DropdownItem>
+                  <DropdownItem>
+                    <NavLink href="/use-ref">UseRef</NavLink>
+                  </DropdownItem>
+                  <DropdownItem>
+                    <NavLink href="/use-layoutEffect">UseLayoutEffect</NavLink>
+                  </DropdownItem>
+                  <DropdownItem>
+                    <NavLink href="/use-imperativeHandle">
+                      UseImperativeHandle
+                    </NavLink>
+                  </DropdownItem>
+                  <DropdownItem>
+                    <NavLink href="/use-context">UseContext</NavLink>
+                  </DropdownItem>
+                  <DropdownItem>
+                    <NavLink href="/use-memo">UseMemo</NavLink>
+                  </DropdownItem>
+                  <DropdownItem>
+                    <NavLink href="/use-callBack">UseCallback</NavLink>
+                  </DropdownItem>
+                </DropdownMenu>
+              </UncontrolledDropdown>
+            </Nav>
+          </Collapse>
+        </div>
       </Navbar>
     </div>
   );
 }
 
-export default Example;
+export default Navigation;

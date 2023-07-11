@@ -1,11 +1,10 @@
 import "./App.css";
-import "bootstrap/dist/css/bootstrap.min.css";
-import StateSmaple from "./components/use-state/useState";
+import MainComponent from "./components/MainComponent";
 
 function App() {
   return (
     <div className="App">
-      <StateSmaple />
+      <MainComponent />
     </div>
   );
 }

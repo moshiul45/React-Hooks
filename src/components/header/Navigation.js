@@ -45,7 +45,7 @@ function Navigation(args) {
                     <NavLink href="/use-ref">UseRef</NavLink>
                   </DropdownItem>
                   <DropdownItem>
-                    <NavLink href="/use-layoutEffect">UseLayoutEffect</NavLink>
+                    <NavLink href="/use-layout-effect">UseLayoutEffect</NavLink>
                   </DropdownItem>
                   <DropdownItem>
                     <NavLink href="/use-imperativeHandle">

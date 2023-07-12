@@ -31,7 +31,7 @@ function Navigation(args) {
                 <DropdownToggle nav caret>
                   All React Hooks
                 </DropdownToggle>
-                <DropdownMenu right>
+                <DropdownMenu end>
                   <DropdownItem>
                     <NavLink href="/use-state">UseState</NavLink>
                   </DropdownItem>

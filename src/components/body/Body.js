@@ -1,8 +1,9 @@
 import React from "react";
 import UseState from "./use-state/useState";
 import UseReducer from "./use-reducer/UseReducer";
+import UseEffect from "./use-effect/UseEffect";
 import "../../style/body/body.css";
-import { BrowserRouter, Routes, Route, Switch } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 const Body = () => {
   return (
@@ -10,6 +11,7 @@ const Body = () => {
       <Routes>
         <Route path="/use-state" element={<UseState />} />
         <Route path="/use-reducer" element={<UseReducer />} />
+        <Route path="/use-effect" element={<UseEffect />} />
       </Routes>
     </BrowserRouter>
   );
